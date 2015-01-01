@@ -1,0 +1,425 @@
+Archive member included because of file (symbol)
+
+libpci_pic.a(pci_subr.pico)   (--whole-archive)
+libpci_pic.a(pci_device.pico)
+                              (--whole-archive)
+libpci_pic.a(pci_bus.pico)    (--whole-archive)
+libpci_pic.a(pci_verbose.pico)
+                              (--whole-archive)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 libpci_pic.a(pci_subr.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libpci_pic.a(pci_device.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libpci_pic.a(pci_bus.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libpci_pic.a(pci_verbose.pico)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/crti.o
+LOAD /usr/lib/crtbeginS.o
+LOAD libpci_pic.a
+LOAD /usr/lib/libc.so
+LOAD /usr/lib/crtendS.o
+LOAD /usr/lib/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000f4       0xc0
+ *(.hash)
+ .hash          0x000000f4       0xc0 /usr/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x000001b4      0x1d0
+ *(.dynsym)
+ .dynsym        0x000001b4      0x1d0 /usr/lib/crti.o
+
+.dynstr         0x00000384      0x185
+ *(.dynstr)
+ .dynstr        0x00000384      0x185 /usr/lib/crti.o
+
+.gnu.version    0x0000050a        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_d  0x0000050c        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_r  0x0000050c        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 /usr/lib/crti.o
+
+.rel.dyn        0x0000050c      0x550
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro.local
+                0x0000050c      0x4f8 /usr/lib/crti.o
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x00000a04       0x18 /usr/lib/crti.o
+ .rel.data.rel.local
+                0x00000a1c        0x8 /usr/lib/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00000a24       0x38 /usr/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+ .rel.ifunc     0x00000000        0x0 /usr/lib/crti.o
+
+.rel.plt        0x00000a5c       0x58
+ *(.rel.plt)
+ .rel.plt       0x00000a5c       0x58 /usr/lib/crti.o
+ *(.rel.iplt)
+
+.init           0x00000ac0        0xa
+ *(SORT(.init))
+ .init          0x00000ac0        0x3 /usr/lib/crti.o
+                0x00000ac0                _init
+ .init          0x00000ac3        0x5 /usr/lib/crtbeginS.o
+ .init          0x00000ac8        0x2 /usr/lib/crtn.o
+
+.plt            0x00000ad0       0xc0
+ *(.plt)
+ .plt           0x00000ad0       0xc0 /usr/lib/crti.o
+ *(.iplt)
+
+.text           0x00000b90     0x3cb4
+                0x00000b90                PROVIDE (__eprol, .)
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000b90        0x0 /usr/lib/crti.o
+ .text          0x00000b90       0xef /usr/lib/crtbeginS.o
+ *fill*         0x00000c7f        0x1 
+ .text          0x00000c80     0x3852 libpci_pic.a(pci_subr.pico)
+                0x00000c80                pci_devinfo
+                0x00000f50                pci_conf_print
+ *fill*         0x000044d2        0xe 
+ .text          0x000044e0       0xa8 libpci_pic.a(pci_device.pico)
+                0x000044e0                pcidev_conf_read
+                0x00004540                pcidev_conf_write
+ *fill*         0x00004588        0x8 
+ .text          0x00004590       0xcd libpci_pic.a(pci_bus.pico)
+                0x00004590                pcibus_conf_read
+                0x00004600                pcibus_conf_write
+ *fill*         0x0000465d        0x3 
+ .text          0x00004660      0x1e3 libpci_pic.a(pci_verbose.pico)
+                0x00004660                pci_findvendor_real
+                0x00004750                pci_findproduct_real
+ *fill*         0x00004843        0x1 
+ .text          0x00004844        0x0 /usr/lib/crtendS.o
+ .text          0x00004844        0x0 /usr/lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00004850        0xa
+ *(SORT(.fini))
+ .fini          0x00004850        0x3 /usr/lib/crti.o
+                0x00004850                _fini
+ .fini          0x00004853        0x5 /usr/lib/crtbeginS.o
+ .fini          0x00004858        0x2 /usr/lib/crtn.o
+                0x0000485a                PROVIDE (__etext, .)
+                0x0000485a                PROVIDE (_etext, .)
+                0x0000485a                PROVIDE (etext, .)
+
+.rodata         0x00004860    0x18d99
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00004860      0x16c libpci_pic.a(pci_subr.pico)
+ .rodata.str1.1
+                0x000049cc     0x2371 libpci_pic.a(pci_subr.pico)
+                               0x23cd (size before relaxing)
+ *fill*         0x00006d3d        0x3 
+ .rodata.str1.16
+                0x00006d40      0xc70 libpci_pic.a(pci_subr.pico)
+                                0xc63 (size before relaxing)
+ .rodata        0x000079b0    0x15c49 libpci_pic.a(pci_verbose.pico)
+                0x000079b0                pci_nwords
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0001d5fc       0x8c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0001d5fc       0x8c libpci_pic.a(pci_subr.pico)
+
+.eh_frame       0x0001d688      0x20c
+ *(.eh_frame)
+ .eh_frame      0x0001d688       0x3c /usr/lib/crti.o
+                                 0x40 (size before relaxing)
+ .eh_frame      0x0001d6c4        0x0 /usr/lib/crtbeginS.o
+ .eh_frame      0x0001d6c4      0x11c libpci_pic.a(pci_subr.pico)
+                                0x134 (size before relaxing)
+ .eh_frame      0x0001d7e0       0x38 libpci_pic.a(pci_device.pico)
+                                 0x50 (size before relaxing)
+ .eh_frame      0x0001d818       0x38 libpci_pic.a(pci_bus.pico)
+                                 0x50 (size before relaxing)
+ .eh_frame      0x0001d850       0x40 libpci_pic.a(pci_verbose.pico)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0001d890        0x4 /usr/lib/crtendS.o
+
+.note.minix.ident
+                0x0001d894       0x18
+ .note.minix.ident
+                0x0001d894       0x18 /usr/lib/crti.o
+
+.note.netbsd.pax
+                0x0001d8ac       0x14
+ .note.netbsd.pax
+                0x0001d8ac       0x14 /usr/lib/crti.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0001d8c0                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0001e000                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+
+.ctors          0x0001e000        0x8
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x0001e000        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0001e004        0x4 /usr/lib/crtendS.o
+                0x0001e004                __CTOR_LIST_END__
+
+.dtors          0x0001e008        0x8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x0001e008        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0001e00c        0x4 /usr/lib/crtendS.o
+
+.jcr            0x0001e010        0x4
+ *(.jcr)
+ .jcr           0x0001e010        0x0 /usr/lib/crtbeginS.o
+ .jcr           0x0001e010        0x4 /usr/lib/crtendS.o
+
+.data.rel.ro    0x0001e020      0x6fc
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x0001e020      0x6fc libpci_pic.a(pci_subr.pico)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0001e71c       0xb0
+ *(.dynamic)
+ .dynamic       0x0001e71c       0xb0 /usr/lib/crti.o
+                0x0001e71c                _DYNAMIC
+
+.got            0x0001e7cc       0x1c
+ *(.got)
+ .got           0x0001e7cc       0x1c /usr/lib/crti.o
+ *(.igot)
+                0x0001e7e8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+
+.got.plt        0x0001e7e8       0x38
+ *(.got.plt)
+ .got.plt       0x0001e7e8       0x38 /usr/lib/crti.o
+                0x0001e7e8                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x0001e820       0x34
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0001e820        0x0 /usr/lib/crti.o
+ .data          0x0001e820        0x0 /usr/lib/crtbeginS.o
+ .data.rel      0x0001e820       0x26 /usr/lib/crtbeginS.o
+                0x0001e820                __dso_handle
+ *fill*         0x0001e846        0x2 
+ .data          0x0001e848        0x0 libpci_pic.a(pci_subr.pico)
+ .data.rel      0x0001e848        0x8 libpci_pic.a(pci_subr.pico)
+                0x0001e848                pci_findvendor
+                0x0001e84c                pci_findproduct
+ .data.rel.local
+                0x0001e850        0x4 libpci_pic.a(pci_subr.pico)
+                0x0001e850                pci_unmatched
+ .data          0x0001e854        0x0 libpci_pic.a(pci_device.pico)
+ .data          0x0001e854        0x0 libpci_pic.a(pci_bus.pico)
+ .data          0x0001e854        0x0 libpci_pic.a(pci_verbose.pico)
+ .data          0x0001e854        0x0 /usr/lib/crtendS.o
+ .data          0x0001e854        0x0 /usr/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x0001e854                _edata = .
+                0x0001e854                PROVIDE (edata, .)
+                0x0001e854                . = .
+                0x0001e854                __bss_start = .
+
+.bss            0x0001e854      0x204
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0001e854        0x0 /usr/lib/crti.o
+ .bss           0x0001e854        0x0 /usr/lib/crtbeginS.o
+ .bss           0x0001e854        0x4 libpci_pic.a(pci_subr.pico)
+                0x0001e854                pciverbose_loaded
+ .bss           0x0001e858        0x0 libpci_pic.a(pci_device.pico)
+ .bss           0x0001e858        0x0 libpci_pic.a(pci_bus.pico)
+ .bss           0x0001e858      0x200 libpci_pic.a(pci_verbose.pico)
+ .bss           0x0001ea58        0x0 /usr/lib/crtendS.o
+ .bss           0x0001ea58        0x0 /usr/lib/crtn.o
+ *(COMMON)
+                0x0001ea58                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0001ea58                . = ALIGN (0x4)
+                0x0001ea58                . = ALIGN (0x4)
+                0x0001ea58                _end = .
+                0x0001ea58                PROVIDE (end, .)
+                0x0001ea58                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x28
+ *(.comment)
+ .comment       0x00000000       0x28 libpci_pic.a(pci_subr.pico)
+                                 0x29 (size before relaxing)
+ .comment       0x00000000       0x29 libpci_pic.a(pci_device.pico)
+ .comment       0x00000000       0x29 libpci_pic.a(pci_bus.pico)
+ .comment       0x00000000       0x29 libpci_pic.a(pci_verbose.pico)
+
+.ident          0x00000000      0x1d1
+ .ident         0x00000000       0x36 /usr/lib/crti.o
+ .ident         0x00000036       0x3a /usr/lib/crtbeginS.o
+ .ident         0x00000070       0x3e libpci_pic.a(pci_subr.pico)
+ .ident         0x000000ae       0x3c libpci_pic.a(pci_device.pico)
+ .ident         0x000000ea       0x39 libpci_pic.a(pci_bus.pico)
+ .ident         0x00000123       0x40 libpci_pic.a(pci_verbose.pico)
+ .ident         0x00000163       0x38 /usr/lib/crtendS.o
+ .ident         0x0000019b       0x36 /usr/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(libpci.so.2.0 elf32-i386-minix)

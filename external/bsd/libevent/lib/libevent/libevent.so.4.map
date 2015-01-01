@@ -1,0 +1,1211 @@
+Archive member included because of file (symbol)
+
+libevent_pic.a(kqueue.pico)   (--whole-archive)
+libevent_pic.a(evrpc.pico)    (--whole-archive)
+libevent_pic.a(event_tagging.pico)
+                              (--whole-archive)
+libevent_pic.a(evdns.pico)    (--whole-archive)
+libevent_pic.a(bufferevent_pair.pico)
+                              (--whole-archive)
+libevent_pic.a(bufferevent_filter.pico)
+                              (--whole-archive)
+libevent_pic.a(http.pico)     (--whole-archive)
+libevent_pic.a(bufferevent_sock.pico)
+                              (--whole-archive)
+libevent_pic.a(listener.pico)
+                              (--whole-archive)
+libevent_pic.a(signal.pico)   (--whole-archive)
+libevent_pic.a(select.pico)   (--whole-archive)
+libevent_pic.a(poll.pico)     (--whole-archive)
+libevent_pic.a(log.pico)      (--whole-archive)
+libevent_pic.a(evutil.pico)   (--whole-archive)
+libevent_pic.a(evthread.pico)
+                              (--whole-archive)
+libevent_pic.a(evmap.pico)    (--whole-archive)
+libevent_pic.a(bufferevent_ratelim.pico)
+                              (--whole-archive)
+libevent_pic.a(bufferevent.pico)
+                              (--whole-archive)
+libevent_pic.a(buffer.pico)   (--whole-archive)
+libevent_pic.a(event.pico)    (--whole-archive)
+libevent_pic.a(evutil_rand.pico)
+                              (--whole-archive)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(kqueue.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(evrpc.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(event_tagging.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(evdns.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(bufferevent_pair.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(bufferevent_filter.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(http.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(bufferevent_sock.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(listener.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(signal.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(select.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(poll.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(log.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(evutil.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(evthread.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(evmap.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(bufferevent_ratelim.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(bufferevent.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(buffer.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(event.pico)
+ .note.GNU-stack
+                0x00000000        0x0 libevent_pic.a(evutil_rand.pico)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/crti.o
+LOAD /usr/lib/crtbeginS.o
+LOAD libevent_pic.a
+LOAD /usr/lib/libc.so
+LOAD /usr/lib/crtendS.o
+LOAD /usr/lib/crtn.o
+                0x000000f4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000f4     0x11c4
+ *(.hash)
+ .hash          0x000000f4     0x11c4 /usr/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x000012b8     0x2660
+ *(.dynsym)
+ .dynsym        0x000012b8     0x2660 /usr/lib/crti.o
+
+.dynstr         0x00003918     0x3026
+ *(.dynstr)
+ .dynstr        0x00003918     0x3026 /usr/lib/crti.o
+
+.gnu.version    0x0000693e        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_d  0x00006940        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /usr/lib/crti.o
+
+.gnu.version_r  0x00006940        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 /usr/lib/crti.o
+
+.rel.dyn        0x00006940      0x4a8
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro
+                0x00006940       0xa8 /usr/lib/crti.o
+ .rel.data.rel.ro.local
+                0x000069e8      0x180 /usr/lib/crti.o
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x00006b68        0x8 /usr/lib/crti.o
+ .rel.data.rel.local
+                0x00006b70      0x140 /usr/lib/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00006cb0      0x138 /usr/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+ .rel.ifunc     0x00000000        0x0 /usr/lib/crti.o
+
+.rel.plt        0x00006de8      0x990
+ *(.rel.plt)
+ .rel.plt       0x00006de8      0x990 /usr/lib/crti.o
+ *(.rel.iplt)
+
+.init           0x00007780        0xa
+ *(SORT(.init))
+ .init          0x00007780        0x3 /usr/lib/crti.o
+                0x00007780                _init
+ .init          0x00007783        0x5 /usr/lib/crtbeginS.o
+ .init          0x00007788        0x2 /usr/lib/crtn.o
+
+.plt            0x00007790     0x1330
+ *(.plt)
+ .plt           0x00007790     0x1330 /usr/lib/crti.o
+ *(.iplt)
+
+.text           0x00008ac0    0x2cb68
+                0x00008ac0                PROVIDE (__eprol, .)
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00008ac0        0x0 /usr/lib/crti.o
+ .text          0x00008ac0       0xef /usr/lib/crtbeginS.o
+ *fill*         0x00008baf        0x1 
+ .text          0x00008bb0      0xa55 libevent_pic.a(kqueue.pico)
+ *fill*         0x00009605        0xb 
+ .text          0x00009610     0x1e3c libevent_pic.a(evrpc.pico)
+                0x00009610                evrpc_init
+                0x00009690                evrpc_free
+                0x00009860                evrpc_unregister_rpc
+                0x000099c0                evrpc_remove_hook
+                0x00009a60                evrpc_add_hook
+                0x00009b40                evrpc_register_rpc
+                0x00009e20                evrpc_reqstate_free
+                0x00009f80                evrpc_request_done
+                0x0000a290                evrpc_get_request
+                0x0000a2a0                evrpc_get_reply
+                0x0000a2b0                evrpc_pool_new
+                0x0000a340                evrpc_pool_free
+                0x0000a530                evrpc_pool_add_connection
+                0x0000a820                evrpc_pool_remove_connection
+                0x0000a850                evrpc_pool_set_timeout
+                0x0000a880                evrpc_resume_request
+                0x0000a8f0                evrpc_make_request
+                0x0000aa60                evrpc_make_request_ctx
+                0x0000ab00                evrpc_hook_add_meta
+                0x0000acb0                evrpc_hook_find_meta
+                0x0000ad20                evrpc_hook_get_connection
+                0x0000ad40                evrpc_send_request_generic
+                0x0000ae20                evrpc_register_generic
+                0x0000aed0                evrpc_request_get_pool
+                0x0000aee0                evrpc_request_set_pool
+                0x0000aef0                evrpc_request_set_cb
+ *fill*         0x0000b44c        0x4 
+ .text          0x0000b450     0x14ea libevent_pic.a(event_tagging.pico)
+                0x0000b450                evtag_init
+                0x0000b460                evtag_encode_int
+                0x0000b540                evtag_encode_int64
+                0x0000b640                evtag_encode_tag
+                0x0000b6b0                evtag_decode_tag
+                0x0000b750                evtag_marshal
+                0x0000b8b0                evtag_marshal_buffer
+                0x0000ba00                evtag_marshal_int
+                0x0000bbe0                evtag_marshal_int64
+                0x0000bdf0                evtag_marshal_string
+                0x0000be40                evtag_marshal_timeval
+                0x0000bfe0                evtag_decode_int
+                0x0000c100                evtag_decode_int64
+                0x0000c210                evtag_peek
+                0x0000c2a0                evtag_peek_length
+                0x0000c340                evtag_payload_length
+                0x0000c3c0                evtag_unmarshal_header
+                0x0000c490                evtag_consume
+                0x0000c4e0                evtag_unmarshal
+                0x0000c560                evtag_unmarshal_int
+                0x0000c670                evtag_unmarshal_int64
+                0x0000c780                evtag_unmarshal_fixed
+                0x0000c7e0                evtag_unmarshal_string
+                0x0000c880                evtag_unmarshal_timeval
+ *fill*         0x0000c93a        0x6 
+ .text          0x0000c940     0x942f libevent_pic.a(evdns.pico)
+                0x0000c940                evdns_get_global_base
+                0x0000c960                evdns_set_log_fn
+                0x0000c980                evdns_set_transaction_id_fn
+                0x0000c990                evdns_set_random_bytes_fn
+                0x0000c9a0                evdns_add_server_port_with_base
+                0x0000cfa0                evdns_add_server_port
+                0x0000cff0                evdns_close_server_port
+                0x0000d1a0                evdns_server_request_add_reply
+                0x0000d330                evdns_server_request_add_a_reply
+                0x0000d3a0                evdns_server_request_add_aaaa_reply
+                0x0000d410                evdns_server_request_add_ptr_reply
+                0x0000d4e0                evdns_server_request_add_cname_reply
+                0x0000d550                evdns_server_request_set_flags
+                0x0000d570                evdns_server_request_respond
+                0x0000e100                evdns_server_request_drop
+                0x0000e130                evdns_server_request_get_requesting_addr
+                0x0000e180                evdns_base_count_nameservers
+                0x0000e210                evdns_count_nameservers
+                0x0000e2a0                evdns_base_clear_nameservers_and_suspend
+                0x0000e440                evdns_cancel_request
+                0x0000e650                evdns_clear_nameservers_and_suspend
+                0x0000e680                evdns_base_resume
+                0x0000e830                evdns_resume
+                0x0000e8a0                evdns_base_nameserver_add
+                0x0000ece0                evdns_nameserver_add
+                0x0000edb0                evdns_base_new
+                0x0000ef90                evdns_base_nameserver_ip_add
+                0x0000f0a0                evdns_nameserver_ip_add
+                0x0000f0f0                evdns_base_nameserver_sockaddr_add
+                0x0000f4c0                evdns_base_resolve_ipv4
+                0x0000fe00                evdns_resolve_ipv4
+                0x0000fe50                evdns_base_resolve_ipv6
+                0x0000ff60                evdns_resolve_ipv6
+                0x0000ffb0                evdns_base_resolve_reverse
+                0x00010120                evdns_resolve_reverse
+                0x00010170                evdns_base_resolve_reverse_ipv6
+                0x00010340                evdns_resolve_reverse_ipv6
+                0x00010390                evdns_base_search_clear
+                0x00010470                evdns_search_clear
+                0x000104a0                evdns_base_search_add
+                0x00010660                evdns_search_add
+                0x000106d0                evdns_base_search_ndots_set
+                0x00010790                evdns_search_ndots_set
+                0x000107c0                evdns_base_set_option
+                0x000111d0                evdns_set_option
+                0x00011280                evdns_base_resolv_conf_parse
+                0x000114d0                evdns_resolv_conf_parse
+                0x00011530                evdns_getaddrinfo
+                0x00011dc0                evdns_init
+                0x00011e00                evdns_err_to_string
+                0x00011ea0                evdns_base_free
+                0x00011ef0                evdns_shutdown
+                0x00011f60                evdns_base_load_hosts
+                0x00012830                evdns_getaddrinfo_cancel
+ *fill*         0x00015d6f        0x1 
+ .text          0x00015d70      0x7f3 libevent_pic.a(bufferevent_pair.pico)
+                0x00015d70                bufferevent_pair_new
+                0x00015f10                bufferevent_pair_get_partner
+ *fill*         0x00016563        0xd 
+ .text          0x00016570      0xa7c libevent_pic.a(bufferevent_filter.pico)
+                0x000168c0                bufferevent_filter_new
+ *fill*         0x00016fec        0x4 
+ .text          0x00016ff0     0x6b3f libevent_pic.a(http.pico)
+                0x00016ff0                evhttp_htmlescape
+                0x000171a0                evhttp_connection_set_max_headers_size
+                0x000171c0                evhttp_connection_set_max_body_size
+                0x000171f0                evhttp_connection_fail
+                0x00017370                evhttp_connection_free
+                0x000174c0                evhttp_request_free
+                0x00017620                evhttp_connection_reset
+                0x000176f0                evhttp_connection_connect
+                0x00017880                evhttp_connection_set_local_address
+                0x00017920                evhttp_connection_set_local_port
+                0x00017990                evhttp_find_header
+                0x000179f0                evhttp_clear_headers
+                0x00017a60                evhttp_remove_header
+                0x00017b00                evhttp_add_header
+                0x00017c70                evhttp_parse_firstline
+                0x00018140                evhttp_parse_headers
+                0x00018330                evhttp_connection_new
+                0x00018370                evhttp_connection_base_new
+                0x00018790                evhttp_connection_get_bufferevent
+                0x000187a0                evhttp_connection_set_base
+                0x00018860                evhttp_connection_set_timeout
+                0x000188c0                evhttp_connection_set_retries
+                0x000188e0                evhttp_connection_set_closecb
+                0x00018900                evhttp_connection_get_peer
+                0x00018d50                evhttp_make_request
+                0x00018fc0                evhttp_cancel_request
+                0x00019030                evhttp_start_read
+                0x000190f0                evhttp_send_error
+                0x000191d0                evhttp_response_code
+                0x00019290                evhttp_send_page
+                0x00019490                evhttp_send_reply
+                0x000195a0                evhttp_send_reply_start
+                0x00019d80                evhttp_send_reply_chunk
+                0x00019ec0                evhttp_send_reply_end
+                0x0001a2a0                evhttp_uriencode
+                0x0001a3c0                evhttp_encode_uri
+                0x0001a400                evhttp_decode_uri
+                0x0001a5c0                evhttp_uridecode
+                0x0001a690                evhttp_parse_query
+                0x0001a8d0                evhttp_parse_query_str
+                0x0001a900                evhttp_bind_socket
+                0x0001a9a0                evhttp_bind_socket_with_handle
+                0x0001aa30                evhttp_accept_socket_with_handle
+                0x0001aae0                evhttp_accept_socket
+                0x0001ab10                evhttp_bind_listener
+                0x0001ad80                evhttp_bound_socket_get_fd
+                0x0001adb0                evhttp_bound_socket_get_listener
+                0x0001adc0                evhttp_del_accept_socket
+                0x0001ae10                evhttp_new
+                0x0001aed0                evhttp_start
+                0x0001afc0                evhttp_free
+                0x0001b100                evhttp_add_virtual_host
+                0x0001b160                evhttp_remove_virtual_host
+                0x0001b1c0                evhttp_add_server_alias
+                0x0001b230                evhttp_remove_server_alias
+                0x0001b2b0                evhttp_set_timeout
+                0x0001b2c0                evhttp_set_max_headers_size
+                0x0001b2e0                evhttp_set_max_body_size
+                0x0001b310                evhttp_set_allowed_methods
+                0x0001b320                evhttp_set_cb
+                0x0001b400                evhttp_del_cb
+                0x0001b490                evhttp_set_gencb
+                0x0001b4b0                evhttp_request_new
+                0x0001b5c0                evhttp_uri_free
+                0x0001b640                evhttp_request_own
+                0x0001b650                evhttp_request_is_owned
+                0x0001b670                evhttp_request_get_connection
+                0x0001b680                evhttp_connection_get_base
+                0x0001b690                evhttp_request_set_chunked_cb
+                0x0001b6a0                evhttp_request_get_uri
+                0x0001b6b0                evhttp_request_get_evhttp_uri
+                0x0001b6c0                evhttp_request_get_host
+                0x0001b7d0                evhttp_uri_get_host
+                0x0001b7e0                evhttp_request_get_command
+                0x0001b7f0                evhttp_request_get_response_code
+                0x0001b800                evhttp_request_get_input_headers
+                0x0001b810                evhttp_request_get_output_headers
+                0x0001b820                evhttp_request_get_input_buffer
+                0x0001b830                evhttp_request_get_output_buffer
+                0x0001b840                evhttp_uri_new
+                0x0001b880                evhttp_uri_set_flags
+                0x0001b890                evhttp_uri_parse
+                0x0001b8c0                evhttp_uri_parse_with_flags
+                0x0001bf50                evhttp_uri_join
+                0x0001c1a0                evhttp_uri_get_scheme
+                0x0001c1b0                evhttp_uri_get_userinfo
+                0x0001c1c0                evhttp_uri_get_port
+                0x0001c1d0                evhttp_uri_get_path
+                0x0001c1e0                evhttp_uri_get_query
+                0x0001c1f0                evhttp_uri_get_fragment
+                0x0001c200                evhttp_uri_set_scheme
+                0x0001c340                evhttp_uri_set_userinfo
+                0x0001c4a0                evhttp_uri_set_host
+                0x0001c760                evhttp_uri_set_port
+                0x0001c780                evhttp_uri_set_path
+                0x0001c820                evhttp_uri_set_query
+                0x0001c8c0                evhttp_uri_set_fragment
+ *fill*         0x0001db2f        0x1 
+ .text          0x0001db30      0xf1b libevent_pic.a(bufferevent_sock.pico)
+                0x0001def0                bufferevent_socket_new
+                0x0001e450                bufferevent_socket_connect
+                0x0001e5c0                bufferevent_socket_connect_hostname
+                0x0001e830                bufferevent_socket_get_dns_error
+                0x0001e8a0                bufferevent_new
+                0x0001e910                bufferevent_priority_set
+                0x0001e9b0                bufferevent_base_set
+ *fill*         0x0001ea4b        0x5 
+ .text          0x0001ea50      0x945 libevent_pic.a(listener.pico)
+                0x0001ea50                evconnlistener_new
+                0x0001eda0                evconnlistener_enable
+                0x0001ee10                evconnlistener_new_bind
+                0x0001ef40                evconnlistener_free
+                0x0001f010                evconnlistener_disable
+                0x0001f080                evconnlistener_get_fd
+                0x0001f0f0                evconnlistener_get_base
+                0x0001f160                evconnlistener_set_cb
+                0x0001f230                evconnlistener_set_error_cb
+ *fill*         0x0001f395        0xb 
+ .text          0x0001f3a0      0x952 libevent_pic.a(signal.pico)
+                0x0001f3a0                evsig_set_base
+                0x0001f420                evsig_init
+                0x0001f660                _evsig_set_handler
+                0x0001f7a0                _evsig_restore_handler
+                0x0001f810                evsig_dealloc
+                0x0001f970                evsig_global_setup_locks_
+ *fill*         0x0001fcf2        0xe 
+ .text          0x0001fd00      0x5df libevent_pic.a(select.pico)
+ *fill*         0x000202df        0x1 
+ .text          0x000202e0      0x53f libevent_pic.a(poll.pico)
+ *fill*         0x0002081f        0x1 
+ .text          0x00020820      0x57a libevent_pic.a(log.pico)
+                0x00020820                event_set_fatal_callback
+                0x00020840                event_err
+                0x000209d0                event_warn
+                0x00020a20                event_sock_err
+                0x00020a70                event_sock_warn
+                0x00020ac0                event_errx
+                0x00020b70                event_warnx
+                0x00020c20                event_msgx
+                0x00020cd0                _event_debugx
+                0x00020d80                event_set_log_callback
+ *fill*         0x00020d9a        0x6 
+ .text          0x00020da0     0x2959 libevent_pic.a(evutil.pico)
+                0x00020da0                evutil_open_closeonexec
+                0x00020df0                evutil_read_file
+                0x00020fb0                evutil_socketpair
+                0x00020fd0                evutil_ersatz_socketpair
+                0x00021250                evutil_closesocket
+                0x00021270                evutil_make_socket_nonblocking
+                0x000212f0                evutil_make_listen_socket_reuseable
+                0x00021340                evutil_make_socket_closeonexec
+                0x000213c0                evutil_strtoll
+                0x000213e0                evutil_socket_connect
+                0x00021500                evutil_socket_finished_connecting
+                0x00021580                evutil_new_addrinfo
+                0x00021740                evutil_freeaddrinfo
+                0x000217a0                evutil_addrinfo_append
+                0x000217d0                evutil_getaddrinfo_common
+                0x00021bd0                evutil_inet_pton
+                0x00021ff0                evutil_adjust_hints_for_addrconfig
+                0x00022450                evutil_getaddrinfo
+                0x00022840                evutil_set_evdns_getaddrinfo_fn
+                0x00022870                evutil_getaddrinfo_async
+                0x00022900                evutil_gai_strerror
+                0x000229a0                evutil_snprintf
+                0x000229f0                evutil_vsnprintf
+                0x00022a40                evutil_inet_ntop
+                0x00022da0                EVUTIL_ISDIGIT
+                0x00022dd0                EVUTIL_ISXDIGIT
+                0x00022e00                evutil_parse_sockaddr_port
+                0x000230b0                evutil_format_sockaddr_port
+                0x000231d0                evutil_sockaddr_cmp
+                0x00023270                EVUTIL_ISALPHA
+                0x000232a0                EVUTIL_ISALNUM
+                0x000232d0                EVUTIL_ISSPACE
+                0x00023300                EVUTIL_ISPRINT
+                0x00023330                EVUTIL_ISLOWER
+                0x00023360                EVUTIL_ISUPPER
+                0x00023390                EVUTIL_TOLOWER
+                0x000233b0                EVUTIL_TOUPPER
+                0x000233d0                evutil_ascii_strcasecmp
+                0x00023420                evutil_ascii_strncasecmp
+                0x00023490                evutil_getenv
+                0x000234c0                _evutil_weakrand
+                0x000234e0                evutil_sockaddr_is_loopback
+                0x00023550                evutil_tv_to_msec
+                0x000235b0                evutil_hex_char_to_int
+ *fill*         0x000236f9        0x7 
+ .text          0x00023700      0xc03 libevent_pic.a(evthread.pico)
+                0x00023700                evthread_set_id_callback
+                0x00023720                evthread_set_lock_callbacks
+                0x00023840                evthread_set_condition_callbacks
+                0x00023950                evthread_enable_lock_debuging
+                0x00023dc0                _evthread_is_debug_lock_held
+                0x00023e00                _evthread_debug_get_real_lock
+                0x00023e10                evthread_setup_global_lock_
+ *fill*         0x00024303        0xd 
+ .text          0x00024310     0x10c2 libevent_pic.a(evmap.pico)
+                0x00024310                evmap_io_initmap
+                0x00024330                evmap_signal_initmap
+                0x00024350                evmap_io_clear
+                0x000243c0                evmap_signal_clear
+                0x00024430                evmap_io_add
+                0x000246f0                evmap_io_del
+                0x000248f0                evmap_io_active
+                0x000249e0                evmap_signal_add
+                0x00024b40                evmap_signal_del
+                0x00024be0                evmap_signal_active
+                0x00024c80                evmap_io_get_fdinfo
+                0x00024ca0                event_changelist_init
+                0x00024cc0                event_changelist_remove_all
+                0x00024d90                event_changelist_freemem
+                0x00024dd0                event_changelist_add
+                0x00024f80                event_changelist_del
+                0x00025000                evmap_check_integrity
+ *fill*         0x000253d2        0xe 
+ .text          0x000253e0     0x24f4 libevent_pic.a(bufferevent_ratelim.pico)
+                0x000253e0                ev_token_bucket_init
+                0x00025450                ev_token_bucket_update
+                0x000254d0                ev_token_bucket_get_tick
+                0x00025540                ev_token_bucket_cfg_new
+                0x00025610                ev_token_bucket_cfg_free
+                0x00025630                _bufferevent_get_read_max
+                0x00025800                _bufferevent_get_write_max
+                0x000259d0                _bufferevent_decrement_read_buckets
+                0x00025d90                _bufferevent_decrement_write_buckets
+                0x00026150                bufferevent_set_rate_limit
+                0x00026650                bufferevent_rate_limit_group_new
+                0x000269a0                bufferevent_rate_limit_group_set_min_share
+                0x000269d0                bufferevent_rate_limit_group_set_cfg
+                0x00026b00                bufferevent_rate_limit_group_free
+                0x00026bd0                bufferevent_add_to_rate_limit_group
+                0x00026d80                bufferevent_remove_from_rate_limit_group
+                0x00026db0                bufferevent_remove_from_rate_limit_group_internal
+                0x00026ec0                bufferevent_get_read_limit
+                0x00027040                bufferevent_get_write_limit
+                0x000271c0                bufferevent_get_max_to_read
+                0x00027230                bufferevent_get_max_to_write
+                0x000272a0                bufferevent_rate_limit_group_get_read_limit
+                0x00027310                bufferevent_rate_limit_group_get_write_limit
+                0x00027380                bufferevent_decrement_read_limit
+                0x000274b0                bufferevent_decrement_write_limit
+                0x000275e0                bufferevent_rate_limit_group_decrement_read
+                0x00027700                bufferevent_rate_limit_group_decrement_write
+                0x00027820                bufferevent_rate_limit_group_get_totals
+                0x000278b0                bufferevent_rate_limit_group_reset_totals
+ *fill*         0x000278d4        0xc 
+ .text          0x000278e0     0x1f78 libevent_pic.a(bufferevent.pico)
+                0x000278e0                bufferevent_suspend_read
+                0x00027970                bufferevent_unsuspend_read
+                0x00027a00                bufferevent_suspend_write
+                0x00027a90                bufferevent_unsuspend_write
+                0x00027b20                _bufferevent_run_readcb
+                0x00027be0                bufferevent_incref
+                0x00027c50                _bufferevent_run_writecb
+                0x00027d10                _bufferevent_run_eventcb
+                0x00027df0                bufferevent_init_common
+                0x00027fa0                bufferevent_enable_locking
+                0x000284a0                bufferevent_setcb
+                0x00028530                bufferevent_get_input
+                0x00028540                bufferevent_get_output
+                0x00028550                bufferevent_get_base
+                0x00028560                bufferevent_write
+                0x000285a0                bufferevent_write_buffer
+                0x000285e0                bufferevent_read
+                0x00028620                bufferevent_read_buffer
+                0x00028660                bufferevent_enable
+                0x00028700                _bufferevent_incref_and_lock
+                0x00028750                _bufferevent_decref_and_unlock
+                0x000289b0                bufferevent_set_timeouts
+                0x00028aa0                bufferevent_settimeout
+                0x00028c00                bufferevent_disable_hard
+                0x00028c90                bufferevent_disable
+                0x00028d20                bufferevent_setwatermark
+                0x00029000                bufferevent_flush
+                0x00029090                bufferevent_get_underlying
+                0x00029130                bufferevent_decref
+                0x00029180                bufferevent_free
+                0x000292d0                bufferevent_setfd
+                0x00029370                bufferevent_getfd
+                0x00029410                bufferevent_get_enabled
+                0x00029480                _bufferevent_init_generic_timeout_cbs
+                0x00029680                _bufferevent_del_generic_timeout_cbs
+                0x000296c0                _bufferevent_generic_adj_timeouts
+                0x000297a0                _bufferevent_add_event
+                0x000297f0                bufferevent_lock
+                0x00029840                bufferevent_unlock
+ *fill*         0x00029858        0x8 
+ .text          0x00029860     0x515d libevent_pic.a(buffer.pico)
+                0x00029860                _evbuffer_chain_pin
+                0x000298d0                _evbuffer_chain_unpin
+                0x00029a20                evbuffer_new
+                0x00029a70                evbuffer_set_flags
+                0x00029ae0                evbuffer_clear_flags
+                0x00029b50                _evbuffer_incref
+                0x00029bb0                _evbuffer_incref_and_lock
+                0x00029bf0                evbuffer_defer_callbacks
+                0x00029ce0                evbuffer_enable_locking
+                0x00029d40                evbuffer_set_parent
+                0x00029da0                evbuffer_invoke_callbacks
+                0x00029fe0                _evbuffer_decref_and_unlock
+                0x0002a180                evbuffer_free
+                0x0002a1c0                evbuffer_lock
+                0x0002a200                evbuffer_unlock
+                0x0002a240                evbuffer_get_length
+                0x0002a2a0                evbuffer_get_contiguous_space
+                0x0002a310                evbuffer_reserve_space
+                0x0002a8f0                _evbuffer_expand_fast
+                0x0002ada0                _evbuffer_read_setup_vecs
+                0x0002aef0                evbuffer_commit_space
+                0x0002b190                evbuffer_add_buffer
+                0x0002b810                evbuffer_prepend_buffer
+                0x0002bb90                evbuffer_drain
+                0x0002bdd0                evbuffer_remove
+                0x0002be70                evbuffer_copyout
+                0x0002bff0                evbuffer_remove_buffer
+                0x0002c390                evbuffer_add
+                0x0002c650                evbuffer_pullup
+                0x0002c9e0                evbuffer_readline
+                0x0002ca20                evbuffer_readln
+                0x0002cba0                evbuffer_search_eol
+                0x0002d040                evbuffer_search
+                0x0002d190                evbuffer_ptr_set
+                0x0002d3f0                evbuffer_prepend
+                0x0002d660                evbuffer_expand
+                0x0002d6d0                evbuffer_read
+                0x0002d8a0                evbuffer_write_atmost
+                0x0002da40                evbuffer_write
+                0x0002da80                evbuffer_find
+                0x0002db50                evbuffer_search_range
+                0x0002dd10                evbuffer_peek
+                0x0002de10                evbuffer_add_vprintf
+                0x0002df80                evbuffer_add_printf
+                0x0002dfc0                evbuffer_add_reference
+                0x0002e0b0                evbuffer_add_file
+                0x0002e440                evbuffer_setcb
+                0x0002e570                evbuffer_add_cb
+                0x0002e620                evbuffer_remove_cb_entry
+                0x0002e6a0                evbuffer_remove_cb
+                0x0002e790                evbuffer_cb_set_flags
+                0x0002e800                evbuffer_cb_clear_flags
+                0x0002e880                evbuffer_freeze
+                0x0002e8f0                evbuffer_unfreeze
+                0x0002e960                _evbuffer_testing_use_sendfile
+                0x0002e980                _evbuffer_testing_use_mmap
+                0x0002e9a0                _evbuffer_testing_use_linear_file_access
+ *fill*         0x0002e9bd        0x3 
+ .text          0x0002e9c0     0x6bdf libevent_pic.a(event.pico)
+                0x0002e9c0                event_debug_map_HT_GROW
+                0x0002ec40                event_mm_malloc_
+                0x0002ec70                event_mm_free_
+                0x0002eca0                event_mm_realloc_
+                0x0002ecd0                event_debug_map_HT_CLEAR
+                0x0002ed30                _event_debug_map_HT_REP_IS_BAD
+                0x0002ee70                event_base_gettimeofday_cached
+                0x0002ef60                event_init
+                0x0002efc0                event_base_new_with_config
+                0x0002f3e0                event_base_new
+                0x0002f480                event_config_new
+                0x0002f500                event_config_free
+                0x0002f5a0                event_base_get_features
+                0x0002f5b0                event_deferred_cb_queue_init
+                0x0002f5e0                event_base_get_deferred_cb_queue
+                0x0002f600                event_enable_debug_mode
+                0x0002f6a0                event_mm_calloc_
+                0x0002f980                event_base_free
+                0x0002ffd0                event_base_priority_init
+                0x00030130                evthread_make_base_notifiable
+                0x00030330                event_base_start_iocp
+                0x00030340                event_base_stop_iocp
+                0x00030350                event_del
+                0x000303e0                event_debug_unassign
+                0x00030590                event_reinit
+                0x00030c20                event_get_supported_methods
+                0x00030cd0                event_config_set_flag
+                0x00030cf0                event_config_avoid_method
+                0x00030de0                event_mm_strdup_
+                0x00030e50                event_config_require_features
+                0x00030e70                event_config_set_num_cpus_hint
+                0x00030e90                event_priority_init
+                0x00030ec0                event_base_init_common_timeout
+                0x000312c0                event_assign
+                0x000316d0                event_priority_set
+                0x000317e0                event_dispatch
+                0x00031820                event_loop
+                0x00031850                event_base_dispatch
+                0x00031880                event_base_loop
+                0x00032530                event_base_get_method
+                0x000325a0                event_loopexit
+                0x000325f0                event_once
+                0x00032670                event_base_loopexit
+                0x000326c0                event_base_once
+                0x00032890                event_loopbreak
+                0x000328c0                event_base_loopbreak
+                0x000329f0                event_base_got_break
+                0x00032a60                event_base_got_exit
+                0x00032b30                event_add
+                0x00032bd0                event_base_set
+                0x00032ce0                event_set
+                0x00032d80                event_new
+                0x00032e20                event_free
+                0x00033050                event_pending
+                0x00033260                event_initialized
+                0x00033280                event_get_assignment
+                0x000333b0                event_get_struct_event_size
+                0x000333c0                event_get_fd
+                0x000334b0                event_get_base
+                0x000335a0                event_get_events
+                0x00033690                event_get_callback
+                0x00033780                event_get_callback_arg
+                0x000342f0                event_active
+                0x00034460                event_active_nolock
+                0x00034a30                event_deferred_cb_init
+                0x00034a60                event_deferred_cb_cancel
+                0x00034af0                event_deferred_cb_schedule
+                0x00034b90                event_get_version
+                0x00034bb0                event_get_version_number
+                0x00034bc0                event_get_method
+                0x00034be0                event_set_mem_functions
+                0x00034d20                event_base_dump_events
+                0x00034f80                event_base_add_virtual
+                0x00034ff0                event_base_del_virtual
+                0x00035150                event_global_setup_locks_
+                0x000351d0                event_base_assert_ok
+ *fill*         0x0003559f        0x1 
+ .text          0x000355a0       0x86 libevent_pic.a(evutil_rand.pico)
+                0x000355a0                evutil_secure_rng_init
+                0x000355c0                evutil_secure_rng_global_setup_locks_
+                0x000355d0                evutil_secure_rng_get_bytes
+                0x000355f0                evutil_secure_rng_add_bytes
+ *fill*         0x00035626        0x2 
+ .text          0x00035628        0x0 /usr/lib/crtendS.o
+ .text          0x00035628        0x0 /usr/lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00035630        0xa
+ *(SORT(.fini))
+ .fini          0x00035630        0x3 /usr/lib/crti.o
+                0x00035630                _fini
+ .fini          0x00035633        0x5 /usr/lib/crtbeginS.o
+ .fini          0x00035638        0x2 /usr/lib/crtn.o
+                0x0003563a                PROVIDE (__etext, .)
+                0x0003563a                PROVIDE (_etext, .)
+                0x0003563a                PROVIDE (etext, .)
+
+.rodata         0x00035640     0x465e
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x00035640      0x140 libevent_pic.a(kqueue.pico)
+                                0x147 (size before relaxing)
+ .rodata.str1.1
+                0x00035780      0x357 libevent_pic.a(evrpc.pico)
+                                0x37a (size before relaxing)
+ .rodata.str1.1
+                0x00035ad7       0x22 libevent_pic.a(event_tagging.pico)
+ *fill*         0x00035af9        0x3 
+ .rodata.cst4   0x00035afc        0x4 libevent_pic.a(evdns.pico)
+ .rodata        0x00035b00       0x44 libevent_pic.a(evdns.pico)
+ .rodata.str1.1
+                0x00035b44      0xfac libevent_pic.a(evdns.pico)
+                               0x1003 (size before relaxing)
+ .rodata.str1.1
+                0x00036af0        0x9 libevent_pic.a(bufferevent_pair.pico)
+ .rodata.str1.1
+                0x00036af9       0xac libevent_pic.a(bufferevent_filter.pico)
+                                 0xcd (size before relaxing)
+ *fill*         0x00036ba5        0x3 
+ .rodata        0x00036ba8      0x136 libevent_pic.a(http.pico)
+ .rodata.str1.1
+                0x00036cde      0xbcd libevent_pic.a(http.pico)
+                                0xc48 (size before relaxing)
+ .rodata.str1.1
+                0x000378ab       0x83 libevent_pic.a(bufferevent_sock.pico)
+                                 0xae (size before relaxing)
+ .rodata.str1.1
+                0x0003792e       0x19 libevent_pic.a(listener.pico)
+ .rodata.str1.1
+                0x00037947      0x229 libevent_pic.a(signal.pico)
+                                0x260 (size before relaxing)
+ .rodata.str1.1
+                0x00037b70       0x64 libevent_pic.a(select.pico)
+                                 0x8c (size before relaxing)
+ .rodata.str1.1
+                0x00037bd4       0x65 libevent_pic.a(poll.pico)
+                                 0xa8 (size before relaxing)
+ .rodata.str1.1
+                0x00037c39       0x20 libevent_pic.a(log.pico)
+                                 0x25 (size before relaxing)
+ *fill*         0x00037c59        0x7 
+ .rodata        0x00037c60      0x43c libevent_pic.a(evutil.pico)
+ .rodata.str1.1
+                0x0003809c      0x316 libevent_pic.a(evutil.pico)
+                                0x348 (size before relaxing)
+ .rodata.str1.1
+                0x000383b2      0x360 libevent_pic.a(evthread.pico)
+                                0x386 (size before relaxing)
+ .rodata.str1.1
+                0x00038712      0x2c3 libevent_pic.a(evmap.pico)
+                                0x2e4 (size before relaxing)
+ .rodata.str1.1
+                0x000389d5      0x197 libevent_pic.a(bufferevent_ratelim.pico)
+                                0x1b8 (size before relaxing)
+ .rodata.str1.1
+                0x00038b6c       0x95 libevent_pic.a(bufferevent.pico)
+                                 0xb6 (size before relaxing)
+ *fill*         0x00038c01        0x3 
+ .rodata        0x00038c04       0x10 libevent_pic.a(buffer.pico)
+ .rodata.str1.1
+                0x00038c14      0x561 libevent_pic.a(buffer.pico)
+                                0x58b (size before relaxing)
+ *fill*         0x00039175        0x3 
+ .rodata.cst4   0x00039178        0x4 libevent_pic.a(event.pico)
+                                  0x8 (size before relaxing)
+ .rodata        0x0003917c       0x68 libevent_pic.a(event.pico)
+ .rodata.str1.1
+                0x000391e4      0xaba libevent_pic.a(event.pico)
+                                0xb23 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00039ca0     0x159c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00039ca0     0x159c libevent_pic.a(kqueue.pico)
+
+.eh_frame       0x0003b23c     0x539c
+ *(.eh_frame)
+ .eh_frame      0x0003b23c       0x3c /usr/lib/crti.o
+                                 0x40 (size before relaxing)
+ .eh_frame      0x0003b278        0x0 /usr/lib/crtbeginS.o
+ .eh_frame      0x0003b278       0xdc libevent_pic.a(kqueue.pico)
+                                 0xf4 (size before relaxing)
+ .eh_frame      0x0003b354      0x438 libevent_pic.a(evrpc.pico)
+                                0x450 (size before relaxing)
+ .eh_frame      0x0003b78c      0x33c libevent_pic.a(event_tagging.pico)
+                                0x354 (size before relaxing)
+ .eh_frame      0x0003bac8      0xbb4 libevent_pic.a(evdns.pico)
+                                0xbcc (size before relaxing)
+ .eh_frame      0x0003c67c      0x11c libevent_pic.a(bufferevent_pair.pico)
+                                0x134 (size before relaxing)
+ .eh_frame      0x0003c798      0x198 libevent_pic.a(bufferevent_filter.pico)
+                                0x1b0 (size before relaxing)
+ .eh_frame      0x0003c930      0xf34 libevent_pic.a(http.pico)
+                                0xf4c (size before relaxing)
+ .eh_frame      0x0003d864      0x21c libevent_pic.a(bufferevent_sock.pico)
+                                0x234 (size before relaxing)
+ .eh_frame      0x0003da80      0x1d0 libevent_pic.a(listener.pico)
+                                0x1e8 (size before relaxing)
+ .eh_frame      0x0003dc50      0x13c libevent_pic.a(signal.pico)
+                                0x154 (size before relaxing)
+ .eh_frame      0x0003dd8c       0xc0 libevent_pic.a(select.pico)
+                                 0xd8 (size before relaxing)
+ .eh_frame      0x0003de4c       0xa0 libevent_pic.a(poll.pico)
+                                 0xb8 (size before relaxing)
+ .eh_frame      0x0003deec      0x16c libevent_pic.a(log.pico)
+                                0x184 (size before relaxing)
+ .eh_frame      0x0003e058      0x548 libevent_pic.a(evutil.pico)
+                                0x560 (size before relaxing)
+ .eh_frame      0x0003e5a0      0x1b8 libevent_pic.a(evthread.pico)
+                                0x1d0 (size before relaxing)
+ .eh_frame      0x0003e758      0x228 libevent_pic.a(evmap.pico)
+                                0x240 (size before relaxing)
+ .eh_frame      0x0003e980      0x410 libevent_pic.a(bufferevent_ratelim.pico)
+                                0x428 (size before relaxing)
+ .eh_frame      0x0003ed90      0x558 libevent_pic.a(bufferevent.pico)
+                                0x570 (size before relaxing)
+ .eh_frame      0x0003f2e8      0x818 libevent_pic.a(buffer.pico)
+                                0x830 (size before relaxing)
+ .eh_frame      0x0003fb00      0xa64 libevent_pic.a(event.pico)
+                                0xa7c (size before relaxing)
+ .eh_frame      0x00040564       0x70 libevent_pic.a(evutil_rand.pico)
+                                 0x88 (size before relaxing)
+ .eh_frame      0x000405d4        0x4 /usr/lib/crtendS.o
+
+.note.minix.ident
+                0x000405d8       0x18
+ .note.minix.ident
+                0x000405d8       0x18 /usr/lib/crti.o
+
+.note.netbsd.pax
+                0x000405f0       0x14
+ .note.netbsd.pax
+                0x000405f0       0x14 /usr/lib/crti.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00040604                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00041000                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+
+.ctors          0x00041000        0x8
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x00041000        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x00041004        0x4 /usr/lib/crtendS.o
+                0x00041004                __CTOR_LIST_END__
+
+.dtors          0x00041008        0x8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x00041008        0x4 /usr/lib/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0004100c        0x4 /usr/lib/crtendS.o
+
+.jcr            0x00041010        0x4
+ *(.jcr)
+ .jcr           0x00041010        0x0 /usr/lib/crtbeginS.o
+ .jcr           0x00041010        0x4 /usr/lib/crtendS.o
+
+.data.rel.ro    0x00041014      0x1a8
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x00041014       0x24 libevent_pic.a(kqueue.pico)
+ .data.rel.ro.local
+                0x00041038       0x3c libevent_pic.a(http.pico)
+ .data.rel.ro.local
+                0x00041074       0x24 libevent_pic.a(bufferevent_sock.pico)
+                0x00041074                bufferevent_ops_socket
+ .data.rel.ro.local
+                0x00041098       0x18 libevent_pic.a(listener.pico)
+ .data.rel.ro.local
+                0x000410b0       0x24 libevent_pic.a(signal.pico)
+ .data.rel.ro.local
+                0x000410d4       0x24 libevent_pic.a(select.pico)
+                0x000410d4                selectops
+ .data.rel.ro.local
+                0x000410f8       0x24 libevent_pic.a(poll.pico)
+                0x000410f8                pollops
+ .data.rel.ro.local
+                0x0004111c       0x10 libevent_pic.a(log.pico)
+ .data.rel.ro.local
+                0x0004112c       0x18 libevent_pic.a(evthread.pico)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x00041144       0x24 libevent_pic.a(kqueue.pico)
+                0x00041144                kqops
+ .data.rel.ro   0x00041168       0x24 libevent_pic.a(bufferevent_pair.pico)
+                0x00041168                bufferevent_ops_pair
+ .data.rel.ro   0x0004118c       0x24 libevent_pic.a(bufferevent_filter.pico)
+                0x0004118c                bufferevent_ops_filter
+ .data.rel.ro   0x000411b0        0xc libevent_pic.a(event.pico)
+
+.dynamic        0x000411bc       0xb0
+ *(.dynamic)
+ .dynamic       0x000411bc       0xb0 /usr/lib/crti.o
+                0x000411bc                _DYNAMIC
+
+.got            0x0004126c       0x9c
+ *(.got)
+ .got           0x0004126c       0x9c /usr/lib/crti.o
+ *(.igot)
+                0x00041308                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+
+.got.plt        0x00041308      0x4d4
+ *(.got.plt)
+ .got.plt       0x00041308      0x4d4 /usr/lib/crti.o
+                0x00041308                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x000417dc       0xe0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000417dc        0x0 /usr/lib/crti.o
+ .data          0x000417dc        0x0 /usr/lib/crtbeginS.o
+ .data.rel      0x000417dc       0x26 /usr/lib/crtbeginS.o
+                0x000417dc                __dso_handle
+ *fill*         0x00041802        0x2 
+ .data          0x00041804        0x0 libevent_pic.a(kqueue.pico)
+ .data          0x00041804        0x0 libevent_pic.a(evrpc.pico)
+ .data          0x00041804        0x0 libevent_pic.a(event_tagging.pico)
+ .data          0x00041804        0x0 libevent_pic.a(evdns.pico)
+ .data          0x00041804        0x0 libevent_pic.a(bufferevent_pair.pico)
+ .data          0x00041804        0x0 libevent_pic.a(bufferevent_filter.pico)
+ .data          0x00041804        0x0 libevent_pic.a(http.pico)
+ .data.rel.local
+                0x00041804       0xa0 libevent_pic.a(http.pico)
+ .data          0x000418a4        0x0 libevent_pic.a(bufferevent_sock.pico)
+ .data          0x000418a4        0x0 libevent_pic.a(listener.pico)
+ .data          0x000418a4        0x4 libevent_pic.a(signal.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(select.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(poll.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(log.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(evutil.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(evthread.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(evmap.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(bufferevent_ratelim.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(bufferevent.pico)
+ .data          0x000418a8        0x0 libevent_pic.a(buffer.pico)
+ .data          0x000418a8       0x14 libevent_pic.a(event.pico)
+ .data          0x000418bc        0x0 libevent_pic.a(evutil_rand.pico)
+ .data          0x000418bc        0x0 /usr/lib/crtendS.o
+ .data          0x000418bc        0x0 /usr/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x000418bc                _edata = .
+                0x000418bc                PROVIDE (edata, .)
+                0x000418bc                . = .
+                0x000418bc                __bss_start = .
+
+.bss            0x000418bc      0x4b0
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000418bc        0x0 /usr/lib/crti.o
+ .bss           0x000418bc        0x0 /usr/lib/crtbeginS.o
+ .bss           0x000418bc        0x0 libevent_pic.a(kqueue.pico)
+ .bss           0x000418bc        0x0 libevent_pic.a(evrpc.pico)
+ .bss           0x000418bc        0x0 libevent_pic.a(event_tagging.pico)
+ .bss           0x000418bc        0x8 libevent_pic.a(evdns.pico)
+ .bss           0x000418c4        0x0 libevent_pic.a(bufferevent_pair.pico)
+ .bss           0x000418c4        0x0 libevent_pic.a(bufferevent_filter.pico)
+ .bss           0x000418c4        0x0 libevent_pic.a(http.pico)
+ .bss           0x000418c4        0x0 libevent_pic.a(bufferevent_sock.pico)
+ .bss           0x000418c4        0x0 libevent_pic.a(listener.pico)
+ .bss           0x000418c4      0x40c libevent_pic.a(signal.pico)
+ .bss           0x00041cd0        0x0 libevent_pic.a(select.pico)
+ .bss           0x00041cd0        0x0 libevent_pic.a(poll.pico)
+ .bss           0x00041cd0        0x8 libevent_pic.a(log.pico)
+ .bss           0x00041cd8        0xb libevent_pic.a(evutil.pico)
+ *fill*         0x00041ce3        0x1 
+ .bss           0x00041ce4       0x60 libevent_pic.a(evthread.pico)
+                0x00041ce4                _evthread_lock_debugging_enabled
+                0x00041ce8                _evthread_lock_fns
+                0x00041d00                _evthread_id_fn
+                0x00041d04                _evthread_cond_fns
+ .bss           0x00041d44        0x0 libevent_pic.a(evmap.pico)
+ .bss           0x00041d44        0x0 libevent_pic.a(bufferevent_ratelim.pico)
+ .bss           0x00041d44        0x0 libevent_pic.a(bufferevent.pico)
+ .bss           0x00041d44        0x1 libevent_pic.a(buffer.pico)
+ *fill*         0x00041d45        0x3 
+ .bss           0x00041d48       0x22 libevent_pic.a(event.pico)
+                0x00041d48                event_global_current_base_
+                0x00041d4c                _event_debug_mode_on
+ *fill*         0x00041d6a        0x2 
+ .bss           0x00041d6c        0x0 libevent_pic.a(evutil_rand.pico)
+ .bss           0x00041d6c        0x0 /usr/lib/crtendS.o
+ .bss           0x00041d6c        0x0 /usr/lib/crtn.o
+ *(COMMON)
+                0x00041d6c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00041d6c                . = ALIGN (0x4)
+                0x00041d6c                . = ALIGN (0x4)
+                0x00041d6c                _end = .
+                0x00041d6c                PROVIDE (end, .)
+                0x00041d6c                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x28
+ *(.comment)
+ .comment       0x00000000       0x28 libevent_pic.a(kqueue.pico)
+                                 0x29 (size before relaxing)
+ .comment       0x00000000       0x29 libevent_pic.a(evrpc.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(event_tagging.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(evdns.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(bufferevent_pair.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(bufferevent_filter.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(http.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(bufferevent_sock.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(listener.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(signal.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(select.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(poll.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(log.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(evutil.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(evthread.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(evmap.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(bufferevent_ratelim.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(bufferevent.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(buffer.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(event.pico)
+ .comment       0x00000000       0x29 libevent_pic.a(evutil_rand.pico)
+
+.ident          0x00000000      0x603
+ .ident         0x00000000       0x36 /usr/lib/crti.o
+ .ident         0x00000036       0x3a /usr/lib/crtbeginS.o
+ .ident         0x00000070       0x3f libevent_pic.a(kqueue.pico)
+ .ident         0x000000af       0x3a libevent_pic.a(evrpc.pico)
+ .ident         0x000000e9       0x42 libevent_pic.a(event_tagging.pico)
+ .ident         0x0000012b       0x3a libevent_pic.a(evdns.pico)
+ .ident         0x00000165       0x49 libevent_pic.a(bufferevent_pair.pico)
+ .ident         0x000001ae       0x4b libevent_pic.a(bufferevent_filter.pico)
+ .ident         0x000001f9       0x39 libevent_pic.a(http.pico)
+ .ident         0x00000232       0x49 libevent_pic.a(bufferevent_sock.pico)
+ .ident         0x0000027b       0x41 libevent_pic.a(listener.pico)
+ .ident         0x000002bc       0x3f libevent_pic.a(signal.pico)
+ .ident         0x000002fb       0x3b libevent_pic.a(select.pico)
+ .ident         0x00000336       0x3d libevent_pic.a(poll.pico)
+ .ident         0x00000373       0x3c libevent_pic.a(log.pico)
+ .ident         0x000003af       0x3b libevent_pic.a(evutil.pico)
+ .ident         0x000003ea       0x41 libevent_pic.a(evthread.pico)
+ .ident         0x0000042b       0x3a libevent_pic.a(evmap.pico)
+ .ident         0x00000465       0x40 libevent_pic.a(bufferevent.pico)
+ .ident         0x000004a5       0x76 libevent_pic.a(buffer.pico)
+ .ident         0x0000051b       0x3a libevent_pic.a(event.pico)
+ .ident         0x00000555       0x40 libevent_pic.a(evutil_rand.pico)
+ .ident         0x00000595       0x38 /usr/lib/crtendS.o
+ .ident         0x000005cd       0x36 /usr/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(libevent.so.4.0 elf32-i386-minix)

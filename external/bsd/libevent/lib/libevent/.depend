@@ -1,0 +1,916 @@
+buffer.ln buffer.go buffer.pico buffer.po buffer.o: /usr/src/external/bsd/libevent/dist/buffer.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h /usr/include/sys/ioctl.h \
+  /usr/include/sys/ttycom.h /usr/include/sys/syslimits.h \
+  /usr/include/sys/ioccom.h /usr/include/sys/dkio.h \
+  /usr/include/prop/plistref.h /usr/include/sys/filio.h \
+  /usr/include/sys/sockio.h /usr/include/sys/ioc_net.h \
+  /usr/include/minix/ioctl.h /usr/include/sys/un.h \
+  /usr/include/sys/ioc_disk.h /usr/include/sys/ioc_file.h \
+  /usr/include/sys/ioc_memory.h /usr/include/sys/ioc_tape.h \
+  /usr/include/sys/ioc_sound.h /usr/include/sys/ioc_block.h \
+  /usr/include/minix/btrace.h /usr/include/sys/ioc_fbd.h \
+  /usr/include/sys/ioc_fb.h /usr/include/dev/vndvar.h \
+  /usr/include/dev/i2c/i2c_io.h /usr/include/sys/mman.h \
+  /usr/include/errno.h /usr/include/sys/errno.h /usr/include/stdio.h \
+  /usr/include/stdlib.h /usr/include/string.h /usr/include/strings.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/unistd.h \
+  /usr/include/sys/unistd.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/limits.h /usr/include/limits.h \
+  /usr/include/machine/limits.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/evbuffer-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/include/sys/queue.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h
+bufferevent.ln bufferevent.go bufferevent.pico bufferevent.po bufferevent.o: /usr/src/external/bsd/libevent/dist/bufferevent.c \
+  /usr/include/sys/types.h /usr/include/sys/featuretest.h \
+  /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/cdefs.h /usr/include/sys/cdefs_elf.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+  /usr/include/strings.h /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/include/sys/queue.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h \
+  /usr/src/external/bsd/libevent/dist/evbuffer-internal.h
+bufferevent_filter.ln bufferevent_filter.go bufferevent_filter.pico bufferevent_filter.po bufferevent_filter.o: \
+  /usr/src/external/bsd/libevent/dist/bufferevent_filter.c \
+  /usr/include/sys/types.h /usr/include/sys/featuretest.h \
+  /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/cdefs.h /usr/include/sys/cdefs_elf.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+  /usr/include/strings.h /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/include/sys/queue.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h
+bufferevent_pair.ln bufferevent_pair.go bufferevent_pair.pico bufferevent_pair.po bufferevent_pair.o: \
+  /usr/src/external/bsd/libevent/dist/bufferevent_pair.c \
+  /usr/include/sys/types.h /usr/include/sys/featuretest.h \
+  /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/cdefs.h /usr/include/sys/cdefs_elf.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/pkg/bin/../lib/clang/3.4/include/stdint.h \
+  /usr/include/stdint.h /usr/include/machine/int_mwgwtypes.h \
+  /usr/include/machine/int_limits.h /usr/include/machine/int_const.h \
+  /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/include/stdio.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/include/sys/queue.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/include/stdlib.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h
+bufferevent_ratelim.ln bufferevent_ratelim.go bufferevent_ratelim.pico bufferevent_ratelim.po bufferevent_ratelim.o: \
+  /usr/src/external/bsd/libevent/dist/bufferevent_ratelim.c \
+  /usr/include/sys/types.h /usr/include/sys/featuretest.h \
+  /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/cdefs.h /usr/include/sys/cdefs_elf.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/limits.h /usr/include/limits.h \
+  /usr/include/machine/limits.h /usr/include/sys/syslimits.h \
+  /usr/include/string.h /usr/include/sys/null.h /usr/include/strings.h \
+  /usr/include/stdlib.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h /usr/include/stdio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/include/sys/queue.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/event-internal.h \
+  /usr/src/external/bsd/libevent/dist/minheap-internal.h \
+  /usr/src/external/bsd/libevent/dist/evsignal-internal.h \
+  /usr/include/signal.h /usr/include/sys/signal.h \
+  /usr/include/sys/siginfo.h /usr/include/machine/signal.h \
+  /usr/include/machine/fpu.h /usr/include/machine/trap.h \
+  /usr/include/x86/trap.h /usr/include/sys/ucontext.h \
+  /usr/include/machine/mcontext.h
+bufferevent_sock.ln bufferevent_sock.go bufferevent_sock.pico bufferevent_sock.po bufferevent_sock.o: \
+  /usr/src/external/bsd/libevent/dist/bufferevent_sock.c \
+  /usr/include/sys/types.h /usr/include/sys/featuretest.h \
+  /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/cdefs.h /usr/include/sys/cdefs_elf.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+  /usr/include/strings.h /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h \
+  /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/sys/socket.h /usr/include/sys/uio.h \
+  /usr/include/netinet/in.h /usr/include/netinet6/in6.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/include/sys/queue.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h
+evdns.ln evdns.go evdns.pico evdns.po evdns.o: /usr/src/external/bsd/libevent/dist/evdns.c \
+  /usr/include/sys/types.h /usr/include/sys/featuretest.h \
+  /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/cdefs.h /usr/include/sys/cdefs_elf.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/string.h /usr/include/sys/null.h /usr/include/strings.h \
+  /usr/include/ssp/strings.h /usr/include/ssp/ssp.h \
+  /usr/include/ssp/string.h /usr/include/fcntl.h /usr/include/sys/stat.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/include/stdlib.h /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/ssp/unistd.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/limits.h /usr/include/limits.h \
+  /usr/include/machine/limits.h /usr/include/sys/syslimits.h \
+  /usr/include/stdio.h /usr/include/ssp/stdio.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/dns.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/dns_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/dns_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/include/sys/queue.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/strlcpy-internal.h \
+  /usr/include/netinet/in.h /usr/include/netinet6/in6.h \
+  /usr/include/arpa/inet.h
+event.ln event.go event.pico event.po event.o: /usr/src/external/bsd/libevent/dist/event.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/sys/queue.h \
+  /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/stdio.h \
+  /usr/include/stdlib.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/ctype.h /usr/include/sys/ctype_inline.h \
+  /usr/include/sys/ctype_bits.h /usr/include/errno.h \
+  /usr/include/sys/errno.h /usr/include/signal.h \
+  /usr/include/sys/signal.h /usr/include/sys/siginfo.h \
+  /usr/include/machine/signal.h /usr/include/machine/fpu.h \
+  /usr/include/machine/trap.h /usr/include/x86/trap.h \
+  /usr/include/sys/ucontext.h /usr/include/machine/mcontext.h \
+  /usr/include/string.h /usr/include/strings.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_compat.h \
+  /usr/src/external/bsd/libevent/dist/event-internal.h \
+  /usr/src/external/bsd/libevent/dist/minheap-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/evsignal-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/evmap-internal.h \
+  /usr/src/external/bsd/libevent/dist/iocp-internal.h \
+  /usr/src/external/bsd/libevent/dist/changelist-internal.h \
+  /usr/src/external/bsd/libevent/dist/ht-internal.h
+event_tagging.ln event_tagging.go event_tagging.pico event_tagging.po event_tagging.o: /usr/src/external/bsd/libevent/dist/event_tagging.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/param.h /usr/include/sys/null.h \
+  /usr/include/sys/inttypes.h /usr/include/sys/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/syslimits.h \
+  /usr/include/sys/signal.h /usr/include/sys/sigtypes.h \
+  /usr/include/sys/siginfo.h /usr/include/machine/signal.h \
+  /usr/include/machine/fpu.h /usr/include/machine/trap.h \
+  /usr/include/x86/trap.h /usr/include/sys/ucontext.h \
+  /usr/include/machine/mcontext.h /usr/include/machine/param.h \
+  /usr/include/machine/limits.h /usr/include/sys/ioctl.h \
+  /usr/include/sys/ttycom.h /usr/include/sys/ioccom.h \
+  /usr/include/sys/dkio.h /usr/include/prop/plistref.h \
+  /usr/include/sys/filio.h /usr/include/sys/sockio.h \
+  /usr/include/sys/ioc_net.h /usr/include/minix/ioctl.h \
+  /usr/include/sys/un.h /usr/include/sys/ioc_disk.h \
+  /usr/include/sys/ioc_file.h /usr/include/sys/ioc_memory.h \
+  /usr/include/sys/ioc_tape.h /usr/include/sys/ioc_sound.h \
+  /usr/include/sys/ioc_block.h /usr/include/minix/btrace.h \
+  /usr/include/sys/ioc_fbd.h /usr/include/sys/ioc_fb.h \
+  /usr/include/dev/vndvar.h /usr/include/dev/i2c/i2c_io.h \
+  /usr/include/sys/queue.h /usr/include/sys/time.h \
+  /usr/include/sys/select.h /usr/include/time.h /usr/include/errno.h \
+  /usr/include/sys/errno.h /usr/include/stdio.h /usr/include/stdlib.h \
+  /usr/include/string.h /usr/include/strings.h /usr/include/syslog.h \
+  /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/limits.h /usr/include/limits.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/tag.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h
+evmap.ln evmap.go evmap.pico evmap.po evmap.o: /usr/src/external/bsd/libevent/dist/evmap.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/sys/queue.h /usr/include/stdio.h \
+  /usr/include/stdlib.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/errno.h /usr/include/sys/errno.h /usr/include/signal.h \
+  /usr/include/sys/signal.h /usr/include/sys/siginfo.h \
+  /usr/include/machine/signal.h /usr/include/machine/fpu.h \
+  /usr/include/machine/trap.h /usr/include/x86/trap.h \
+  /usr/include/sys/ucontext.h /usr/include/machine/mcontext.h \
+  /usr/include/string.h /usr/include/strings.h \
+  /usr/src/external/bsd/libevent/dist/event-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/minheap-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/evsignal-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/evmap-internal.h \
+  /usr/src/external/bsd/libevent/dist/changelist-internal.h
+evrpc.ln evrpc.go evrpc.pico evrpc.po evrpc.o: /usr/src/external/bsd/libevent/dist/evrpc.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/socket.h /usr/include/sys/uio.h \
+  /usr/include/sys/sigtypes.h /usr/include/sys/time.h \
+  /usr/include/sys/select.h /usr/include/time.h /usr/include/sys/null.h \
+  /usr/include/sys/queue.h /usr/include/stdio.h /usr/include/stdlib.h \
+  /usr/include/unistd.h /usr/include/sys/unistd.h /usr/include/errno.h \
+  /usr/include/sys/errno.h /usr/include/signal.h \
+  /usr/include/sys/signal.h /usr/include/sys/siginfo.h \
+  /usr/include/machine/signal.h /usr/include/machine/fpu.h \
+  /usr/include/machine/trap.h /usr/include/x86/trap.h \
+  /usr/include/sys/ucontext.h /usr/include/machine/mcontext.h \
+  /usr/include/string.h /usr/include/strings.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/rpc.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/rpc_struct.h \
+  /usr/src/external/bsd/libevent/dist/evrpc-internal.h \
+  /usr/src/external/bsd/libevent/dist/http-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/http.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/tag.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/http_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/http_compat.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h
+evthread.ln evthread.go evthread.pico evthread.po evthread.o: /usr/src/external/bsd/libevent/dist/evthread.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/include/stdlib.h /usr/include/sys/featuretest.h \
+  /usr/include/sys/types.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/null.h /usr/include/string.h /usr/include/strings.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/include/errno.h /usr/include/sys/errno.h /usr/include/stdio.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h
+evutil.ln evutil.go evutil.pico evutil.po evutil.o: /usr/src/external/bsd/libevent/dist/evutil.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/socket.h /usr/include/sys/uio.h \
+  /usr/include/sys/sigtypes.h /usr/include/unistd.h \
+  /usr/include/sys/unistd.h /usr/include/sys/null.h /usr/include/fcntl.h \
+  /usr/include/sys/stat.h /usr/include/sys/time.h \
+  /usr/include/sys/select.h /usr/include/time.h /usr/include/stdlib.h \
+  /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/limits.h /usr/include/limits.h \
+  /usr/include/machine/limits.h /usr/include/sys/syslimits.h \
+  /usr/include/stdio.h /usr/include/string.h /usr/include/strings.h \
+  /usr/include/netinet/in.h /usr/include/netinet6/in6.h \
+  /usr/include/arpa/inet.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/strlcpy-internal.h
+evutil_rand.ln evutil_rand.go evutil_rand.pico evutil_rand.po evutil_rand.o: /usr/src/external/bsd/libevent/dist/evutil_rand.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/limits.h /usr/include/limits.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/limits.h \
+  /usr/include/sys/syslimits.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/include/sys/time.h /usr/include/sys/types.h \
+  /usr/include/machine/types.h /usr/include/machine/int_types.h \
+  /usr/include/machine/ansi.h /usr/include/sys/ansi.h \
+  /usr/include/machine/endian.h /usr/include/sys/endian.h \
+  /usr/include/machine/endian_machdep.h /usr/include/machine/bswap.h \
+  /usr/include/machine/byte_swap.h /usr/include/sys/bswap.h \
+  /usr/include/sys/fd_set.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/pkg/bin/../lib/clang/3.4/include/stdint.h \
+  /usr/include/stdint.h /usr/include/machine/int_mwgwtypes.h \
+  /usr/include/machine/int_limits.h /usr/include/machine/int_const.h \
+  /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h /usr/include/stdio.h /usr/include/stdlib.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/include/string.h /usr/include/strings.h
+http.ln http.go http.pico http.po http.o: /usr/src/external/bsd/libevent/dist/http.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/param.h \
+  /usr/include/sys/null.h /usr/include/sys/inttypes.h \
+  /usr/include/sys/stdint.h /usr/include/machine/int_types.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/ansi.h /usr/include/sys/ansi.h \
+  /usr/include/machine/endian.h /usr/include/sys/endian.h \
+  /usr/include/machine/endian_machdep.h /usr/include/machine/bswap.h \
+  /usr/include/machine/byte_swap.h /usr/include/sys/bswap.h \
+  /usr/include/sys/fd_set.h /usr/include/sys/syslimits.h \
+  /usr/include/sys/signal.h /usr/include/sys/sigtypes.h \
+  /usr/include/sys/siginfo.h /usr/include/machine/signal.h \
+  /usr/include/machine/fpu.h /usr/include/machine/trap.h \
+  /usr/include/x86/trap.h /usr/include/sys/ucontext.h \
+  /usr/include/machine/mcontext.h /usr/include/machine/param.h \
+  /usr/include/machine/limits.h /usr/include/sys/time.h \
+  /usr/include/sys/select.h /usr/include/time.h \
+  /usr/include/sys/resource.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h /usr/include/sys/stat.h /usr/include/sys/wait.h \
+  /usr/include/sys/queue.h /usr/include/netinet/in.h \
+  /usr/include/netinet6/in6.h /usr/include/arpa/inet.h \
+  /usr/include/netdb.h /usr/include/inttypes.h /usr/include/errno.h \
+  /usr/include/sys/errno.h /usr/include/stdio.h /usr/include/stdlib.h \
+  /usr/include/string.h /usr/include/strings.h /usr/include/syslog.h \
+  /usr/include/signal.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/fcntl.h \
+  /usr/src/external/bsd/libevent/dist/strlcpy-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/http.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/buffer.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/http_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/http_compat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/listener.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/http-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/bufferevent-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/ratelim-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/bufferevent_struct.h
+kqueue.ln kqueue.go kqueue.pico kqueue.po kqueue.o: /usr/src/external/bsd/libevent/dist/kqueue.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/sys/queue.h \
+  /usr/include/sys/event.h /usr/include/sys/inttypes.h \
+  /usr/include/sys/stdint.h /usr/include/machine/int_mwgwtypes.h \
+  /usr/include/machine/int_limits.h /usr/include/machine/int_const.h \
+  /usr/include/machine/wchar_limits.h /usr/include/machine/int_fmtio.h \
+  /usr/include/sys/ioctl.h /usr/include/sys/ttycom.h \
+  /usr/include/sys/syslimits.h /usr/include/sys/ioccom.h \
+  /usr/include/sys/dkio.h /usr/include/prop/plistref.h \
+  /usr/include/sys/filio.h /usr/include/sys/sockio.h \
+  /usr/include/sys/ioc_net.h /usr/include/minix/ioctl.h \
+  /usr/include/sys/un.h /usr/include/sys/ioc_disk.h \
+  /usr/include/sys/ioc_file.h /usr/include/sys/ioc_memory.h \
+  /usr/include/sys/ioc_tape.h /usr/include/sys/ioc_sound.h \
+  /usr/include/sys/ioc_block.h /usr/include/minix/btrace.h \
+  /usr/include/sys/ioc_fbd.h /usr/include/sys/ioc_fb.h \
+  /usr/include/dev/vndvar.h /usr/include/dev/i2c/i2c_io.h \
+  /usr/include/signal.h /usr/include/sys/signal.h \
+  /usr/include/sys/siginfo.h /usr/include/machine/signal.h \
+  /usr/include/machine/fpu.h /usr/include/machine/trap.h \
+  /usr/include/x86/trap.h /usr/include/sys/ucontext.h \
+  /usr/include/machine/mcontext.h /usr/include/stdio.h \
+  /usr/include/stdlib.h /usr/include/string.h /usr/include/strings.h \
+  /usr/include/unistd.h /usr/include/sys/unistd.h /usr/include/errno.h \
+  /usr/include/sys/errno.h /usr/include/inttypes.h \
+  /usr/src/external/bsd/libevent/dist/event-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/sys/socket.h /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/minheap-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/evsignal-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/evmap-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/changelist-internal.h
+listener.ln listener.go listener.pico listener.po listener.o: /usr/src/external/bsd/libevent/dist/listener.c \
+  /usr/include/sys/types.h /usr/include/sys/featuretest.h \
+  /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/cdefs.h /usr/include/sys/cdefs_elf.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/include/sys/socket.h /usr/include/sys/uio.h \
+  /usr/include/sys/sigtypes.h /usr/include/fcntl.h \
+  /usr/include/sys/stat.h /usr/include/sys/time.h \
+  /usr/include/sys/select.h /usr/include/time.h /usr/include/sys/null.h \
+  /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/listener.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/include/stdio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/include/stdlib.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h
+log.ln log.go log.pico log.po log.o: /usr/src/external/bsd/libevent/dist/log.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/stdio.h /usr/include/sys/null.h /usr/include/stdlib.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h
+poll.ln poll.go poll.pico poll.po poll.o: /usr/src/external/bsd/libevent/dist/poll.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/sys/queue.h /usr/include/poll.h \
+  /usr/include/signal.h /usr/include/sys/signal.h \
+  /usr/include/sys/siginfo.h /usr/include/machine/signal.h \
+  /usr/include/machine/fpu.h /usr/include/machine/trap.h \
+  /usr/include/x86/trap.h /usr/include/sys/ucontext.h \
+  /usr/include/machine/mcontext.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/limits.h /usr/include/limits.h \
+  /usr/include/machine/limits.h /usr/include/sys/syslimits.h \
+  /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/src/external/bsd/libevent/dist/event-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/minheap-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/evsignal-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/evmap-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h
+select.ln select.go select.pico select.po select.o: /usr/src/external/bsd/libevent/dist/select.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/sys/queue.h /usr/include/signal.h \
+  /usr/include/sys/signal.h /usr/include/sys/siginfo.h \
+  /usr/include/machine/signal.h /usr/include/machine/fpu.h \
+  /usr/include/machine/trap.h /usr/include/x86/trap.h \
+  /usr/include/sys/ucontext.h /usr/include/machine/mcontext.h \
+  /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/src/external/bsd/libevent/dist/event-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/minheap-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/evsignal-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/evmap-internal.h
+signal.ln signal.go signal.pico signal.po signal.o: /usr/src/external/bsd/libevent/dist/signal.c \
+  /usr/src/external/bsd/libevent/include/event2/event-config.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/cdefs.h \
+  /usr/include/sys/cdefs_elf.h /usr/include/sys/types.h \
+  /usr/include/sys/featuretest.h /usr/include/machine/types.h \
+  /usr/include/machine/int_types.h /usr/include/machine/ansi.h \
+  /usr/include/sys/ansi.h /usr/include/machine/endian.h \
+  /usr/include/sys/endian.h /usr/include/machine/endian_machdep.h \
+  /usr/include/machine/bswap.h /usr/include/machine/byte_swap.h \
+  /usr/include/sys/bswap.h /usr/include/sys/fd_set.h \
+  /usr/include/sys/time.h /usr/include/sys/select.h \
+  /usr/include/sys/sigtypes.h /usr/include/time.h \
+  /usr/include/sys/null.h /usr/include/sys/queue.h \
+  /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/signal.h \
+  /usr/include/sys/signal.h /usr/include/sys/siginfo.h \
+  /usr/include/machine/signal.h /usr/include/machine/fpu.h \
+  /usr/include/machine/trap.h /usr/include/x86/trap.h \
+  /usr/include/sys/ucontext.h /usr/include/machine/mcontext.h \
+  /usr/include/stdio.h /usr/include/stdlib.h /usr/include/string.h \
+  /usr/include/strings.h /usr/include/unistd.h /usr/include/sys/unistd.h \
+  /usr/include/errno.h /usr/include/sys/errno.h /usr/include/fcntl.h \
+  /usr/include/sys/stat.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/util.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/int_mwgwtypes.h /usr/include/machine/int_limits.h \
+  /usr/include/machine/int_const.h /usr/include/machine/wchar_limits.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stddef.h \
+  /usr/pkg/bin/../lib/clang/3.4/include/stdarg.h /usr/include/netdb.h \
+  /usr/include/inttypes.h /usr/include/sys/inttypes.h \
+  /usr/include/machine/int_fmtio.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/event_struct.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/keyvalq_struct.h \
+  /usr/src/external/bsd/libevent/dist/event-internal.h \
+  /usr/src/external/bsd/libevent/dist/minheap-internal.h \
+  /usr/src/external/bsd/libevent/dist/util-internal.h \
+  /usr/src/external/bsd/libevent/dist/log-internal.h \
+  /usr/src/external/bsd/libevent/dist/ipv6-internal.h \
+  /usr/src/external/bsd/libevent/dist/mm-internal.h \
+  /usr/src/external/bsd/libevent/dist/evsignal-internal.h \
+  /usr/src/external/bsd/libevent/dist/defer-internal.h \
+  /usr/src/external/bsd/libevent/dist/evmap-internal.h \
+  /usr/src/external/bsd/libevent/dist/evthread-internal.h \
+  /usr/src/external/bsd/libevent/dist/include/event2/thread.h
